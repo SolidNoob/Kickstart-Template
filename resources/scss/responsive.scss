@@ -1,0 +1,27 @@
+@media screen and (max-width: 992px){
+}
+
+@media screen and (max-width: 768px){
+	
+	// Navbar background color
+	#main-navbar{
+		background:  rgba($third-color, 1);
+	}
+	
+	// Navbar brand
+    .navbar-brand {
+	    line-height: 50px;
+	    height: 50px;
+	    padding-top: 0;
+	}
+	
+	// Navbar links
+	#main-navbar .navbar-nav li a{
+	    line-height: 40px;
+	    height: 40px;
+	    &:hover{
+	    	background: $second-color;
+	    	color: #fff !important;
+	    }
+	}
+} 

@@ -1,0 +1,53 @@
+$font-stack:    'Lato', sans-serif;
+$primary-color: #333;
+$second-color: #428bca;
+$third-color:  #e5e4e4;
+
+body {
+  font: 14px $font-stack;
+  padding-top: 70px;
+}
+
+// Navbar background color
+#main-navbar{
+	background:  rgba($third-color, 0.9);
+    border-bottom: 0;
+}
+
+// Navbar brand
+#main-navbar .navbar-brand{
+	color: $primary-color;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+// Navbar height
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 70px;
+    height: 70px;
+    padding-top: 0;
+}
+
+// Navbar links
+#main-navbar .navbar-nav > li > a, #main-navbar .navbar-text{
+	text-transform: uppercase;
+	color: $primary-color;
+	font-weight: 900;
+	transition: all 0.3s; 
+	&:hover{
+		color: $second-color;
+	}
+}
+
+// Navbar toggle icon
+#main-navbar .navbar-toggle {
+    background-color: $second-color;
+    border: none;
+
+    &:hover{
+    	background: $primary-color;
+    }
+}
+
+@import "responsive.scss";
