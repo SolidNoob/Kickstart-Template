@@ -50,7 +50,7 @@ gulp.task('scripts', function() {
         ])
         .pipe(concat('app.min.js'))
         .pipe(gulp.dest('public/js'))
-        .pipe(uglify())
+        .pipe(uglify());
 });
 
 
