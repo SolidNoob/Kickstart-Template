@@ -1,5 +1,19 @@
-//npm install --save-dev gulp
-//npm install --save-dev gulp-concat-css gulp-jshint gulp-sass gulp-concat gulp-concat-css gulp-uglify gulp-rename gulp-minify-css
+/*
+* If no package.json:
+* npm install --save-dev gulp
+* npm install --save-dev gulp-concat-css gulp-jshint gulp-sass gulp-concat gulp-concat-css gulp-uglify gulp-rename gulp-minify-css
+*/
+
+
+/*
+* To install all dependencies from the package.json file's list, run:
+* npm install
+*/
+
+/*
+* To install and add new dependency in the dependencies list, run:
+* npm install PackageName --save-dev  
+*/
 
 // Include gulp
 var gulp = require('gulp'); 
@@ -15,7 +29,7 @@ var minifyCss = require('gulp-minify-css');
 
 // Lint Task
 gulp.task('lint', function() {
-    return gulp.src('resources/js/main.js')
+    return gulp.src('resources/js/app.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
