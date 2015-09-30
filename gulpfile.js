@@ -46,6 +46,7 @@ gulp.task('sass', function() {
 // Concatenate & Minify CSS Files
 gulp.task('styles', ['sass'], function () {
     return gulp.src([
+        'resources/css/libs/bootstrap.min.css', 
         'resources/css/libs/*.css', 
         'resources/css/app.css'
         ])
@@ -57,9 +58,9 @@ gulp.task('styles', ['sass'], function () {
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
     return gulp.src([
-        'resources/js/libs/jquery.min.js', 
-        'resources/js/libs/bootstrap.min.js', 
-        //'resources/js/libs/npm.js',
+        'resources/js/libs/jquery.min.js',
+        'resources/js/libs/bootstrap.min.js',
+        'resources/js/libs/*.js', 
         'resources/js/app.js'
         ])
         .pipe(concat('app.min.js'))

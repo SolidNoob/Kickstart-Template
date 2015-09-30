@@ -1,17 +1,20 @@
-$font-stack:    'Lato', sans-serif;
+$font-stack:    'Lato', sans-serif, verdana;
 $primary-color: #333;
 $second-color: #428bca;
-$third-color:  #e5e4e4;
+$third-color:  #f0f0f0;
 
 body {
-  font: 14px $font-stack;
+  font: 16px $font-stack;
+  color: $primary-color;
   padding-top: 70px;
+  line-height: 150%;
 }
 
 // Navbar background color
 #main-navbar{
 	background:  rgba($third-color, 0.9);
     border-bottom: 0;
+    border-bottom: 1px solid $border-color;
 }
 
 // Navbar brand
